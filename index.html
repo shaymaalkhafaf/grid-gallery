@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery</title>
+    <style>
+        
+        body{
+            margin: 20px;
+        }
+
+       header{
+           border: 2px solid black;
+           border-radius: 3px;
+           background-color: rgb(240, 206, 223);
+           margin: 10px
+       }
+
+       h1{
+           font-family: sans-serif;
+           text-align: center;
+       }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            grid-template-rows: auto auto auto;
+            grid-gap: 10px;
+        
+        }
+        .gallery img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+            
+
+        }
+
+        .item1 {
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 4;
+        }
+
+
+        .item2 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+
+        .item3 {
+            grid-column-start: 5;
+            grid-column-end: 6;
+            grid-row-start: 1;
+            grid-row-end: 4;
+           
+        }
+
+        .item4 {
+            grid-column-start: 6;
+            grid-column-end: 8;
+            grid-row-start: 1;
+            grid-row-end: 3;
+           
+        }
+
+        .item5 {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start:4;
+            grid-row-end: 5;
+           
+        }
+
+
+        .item6 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 4;
+           
+        }
+
+        .item7 {
+            grid-column-start: 6;
+            grid-column-end: 8;
+            grid-row-start: 3;
+            grid-row-end: 4;
+           
+        }
+        .item8 {
+            grid-column-start: 7;
+            grid-column-end: 8;
+            grid-row-start: 3;
+            grid-row-end: 5;
+           
+        }
+        .item9 {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 4;
+            grid-row-end: 5;
+           
+        }
+        .item12 {
+            grid-column-start: 5;
+            grid-column-end: 8;
+            grid-row-start: 4;
+            grid-row-end: 5;
+           
+        }
+
+        footer{
+            border: 2px solid rgb(185, 174, 174);
+           border-radius: 3px;
+           background-color: rgb(240, 206, 223);
+           margin: 20px
+        }
+
+        h4{
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Responsive image gallery using the Grid Layout</h1>
+    </header>
+    <div id="container">
+        <div class="gallery">
+            <div class="item1"><img src="./image/01.jfif"> 
+            </div>
+
+            <div class="item2"><img src="./image/02.jfif"> 
+            </div>
+
+            <div class="item3"><img src="./image/03.jfif"> 
+            </div>
+
+            <div class="item4"><img src="./image/04.jfif"> 
+            </div>
+
+            <div class="item5"><img src="./image/05.jfif"> 
+            </div>
+
+            <div class="item6"><img src="./image/06.jfif"> 
+            </div>
+
+            <div class="item7"><img src="./image/07.jfif"> 
+            </div>
+
+             <div class="item9"><img src="./image/09.jfif"> 
+             </div>
+ 
+             <div class="item11"><img src="./image/07.jfif"> 
+             </div>
+ 
+             <div class="item12"><img src="./image/08.jfif">
+              </div>
+
+            
+        </div>
+        </div>
+
+<footer>
+    <a href="https://www.google.com/"><h4>Thank You</h4></a>
+</footer>
+       
+    </div>
+</body>
+</html>
